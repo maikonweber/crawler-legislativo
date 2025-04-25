@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decreto Municipal n&#xBA; 13.572/2025 - Legislação Digital</title>
+
+    <meta property="og:url" content="https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" />
+    <meta property="og:type" content="legislacaodigital.com.br" />
+    <meta property="og:title" content="Decreto Municipal n&#xBA; 13.572/2025 - Legislação Digital" />
+    <meta property="og:description" content="Legislação Digital" />
+    <meta property="og:image" content="/cidades/sp/rioclaro/images/brasao.png" />
+
+    
+    
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/lib/select2/dist/css/select2.css" />
+        <link rel="stylesheet" href="/lib/select2-bootstrap-theme/dist/select2-bootstrap.min.css" />
+        <link rel="stylesheet" href="/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
+        <link rel="stylesheet" href="/lib/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" />
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/css/site.min.css?v=_vfJ3_EXwj-NlPWkm57NiGbWUDPMn0_w8Cp_JIc_jxc" />
+            <link rel="stylesheet" href="/cidades/sp/rioclaro/css/site.css" />
+        <link rel="stylesheet" href="/css/contraste.css" />
+        <!--[if lte IE 8]>
+            <script src="/lib/html5shiv/dist/html5shiv.min.js"></script>
+            <script src="/lib/respond/dest/respond.min.js"></script>
+            <script src="/js/ie8.js"></script>
+        <![endif]-->
+
+        <script src="/lib/jquery/dist/jquery.min.js"></script>
+        <script src="/lib/select2/dist/js/select2.full.js"></script>
+        <script src="/lib/select2/dist/js/i18n/pt-BR.js"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+        <script src="/lib/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+        <script src="/lib/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+        <script src="/lib/jquery.highlight/dist/jquery-highlight-min1.js"></script>
+        
+    
+    <script>window.application = "/RioClaro-SP/";</script>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <nav class="navbar navbar-inverse navbar-static-top acessibility hidden-print visible-md visible-sm visible-lg">
+                <div class="container">
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a accesskey="1" title="Menu principal" href="#menu">Menu <span class="access-key">1</span></a>
+                            </li>
+                            <li>
+                                <a accesskey="2" title="Conteúdo da página" href="#content">Conteúdo <span class="access-key">2</span></a>
+                            </li>
+                            <li>
+                                <a accesskey="3" title="Rodapé da página" href="#rodape">Rodapé <span class="access-key">3</span></a>
+                            </li>
+                            <li class="visible-lg">
+                                <a accesskey="4" title="Aumenta o tamanho da fonte" href="/RioClaro-SP/Home/AumentarFonte?tipo=0">Aumentar fonte <span class="access-key">4</span></a>
+                            </li>
+                            <li class="visible-lg">
+                                <a accesskey="5" title="Diminui o tamanho da fonte" href="/RioClaro-SP/Home/DiminuirFonte?tipo=1">Reduzir fonte <span class="access-key">5</span></a>
+                            </li>
+                            <li>
+                                <a accesskey="6" title="Altera o contraste das cores" id="lnk-alto-contraste" class="cursor-pointer"><span>Alto contraste</span> <span class="access-key">6</span></a>
+                            </li>
+                            <li>
+                                <a accesskey="7" title="Página de acessibilidade" href="/RioClaro-SP/Home/Acessibilidade">Acessibilidade <span class="access-key">7</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="brasao col-sm-3 col-md-2 col-xs-4">
+                        <a href=/RioClaro-SP title="brasão" >
+                            <img src="/cidades/sp/rioclaro/images/brasao.png" alt="Brasão" />
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-md-9 col-xs-8">
+                        <h3 style="margin-bottom: 0;"></h3>
+                        <h1>Rio Claro</h1>
+                        <h2>S&#xE3;o Paulo</h2>
+                    </div>
+                    <div class="col-sm-1 col-md-1 hidden-xs hidden-print">
+                        <ul class="app list-style-none">
+                            <li><a title="Disponível no Google Play" href="https://play.google.com/store/apps/details?id=com.sinoinformatica.Sino.Legislacao.Mobile"><img src="/images/google-play-badge.png" alt="Google Play" /></a></li>
+                            <li><a title="Baixar na App Store" href="https://apps.apple.com/us/app/legisla%C3%A7%C3%A3o-digital/id1478630809?l=pt&ls=1"><img src="/images/app-store-badge.png" alt="Apple Store" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-default navbar-static-top navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <ul class="app pull-left list-inline navbar-toggle-left visible-lxs hidden-sm hidden-md hidden-lg">
+                        <li class="hidden-lxs"><a title="Disponível no Google Play" href="https://play.google.com/store/apps/details?id=com.sinoinformatica.Sino.Legislacao.Mobile"><img src="/images/google-play-badge.png" alt="Google Play" /></a></li>
+                        <li class="hidden-lxs"><a title="Baixar na App Store" href="https://apps.apple.com/us/app/legisla%C3%A7%C3%A3o-digital/id1478630809?l=pt&ls=1"><img src="/images/app-store-badge.png" alt="Apple Store" /></a></li>
+                    </ul>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" id="menu">
+                        <li><a title="Página inicial" href="/RioClaro-SP"><span aria-hidden="true" class="fa fa-home"></span> Página inicial</a></li>
+                        <li><a title="Gerencia normas favoritas" href="/RioClaro-SP/Account/Favorite"><span aria-hidden="true" class="fa fa-star"></span> Normas Favoritas</a></li>
+                        <li><a title="Gerencia notificações" href="/RioClaro-SP/Account/Notifications"><span aria-hidden="true" class="fa fa-bell"></span> Notificações</a></li>
+                    </ul>
+                    
+
+
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/RioClaro-SP/Account/Register"><span aria-hidden="true" class="fa fa-edit"></span> Registrar-se</a></li>
+        <li><a href="/RioClaro-SP/Account/Login"><span aria-hidden="true" class="fa fa-sign-in"></span> Login</a></li>
+    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="content">
+                
+<nav class="panel panel-primary hidden-print" data-spy="affix">
+    <div class="panel-heading">
+        <ul class="list-inline pull-left">
+            <li class="visible-xs">
+                <div class="btn-group" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button title="Modo de visualização" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fa fa-bars" aria-hidden="true"></span>
+                            Opções
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu overflow max-height-90vh">
+                            <li>
+                                <a href="#" title="Ficha" data-toggle="modal" data-target="#normas-ficha">
+                                    <span class="fa fa-file-text-o" aria-hidden="true"></span>
+                                    <span>Ficha</span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="#" title="Índice" data-toggle="modal" data-target="#normas-indice">
+                                    <span class="fa fa-list" aria-hidden="true"></span>
+                                    <span>Índice</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a title="Próxima lei" href="/RioClaro-SP/DecretosMunicipais/13573">
+                                    <span>»</span>
+                                    <span>Posterior</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Lei anterior" href="/RioClaro-SP/DecretosMunicipais/13571">
+                                    <span>«</span>
+                                    <span>Anterior</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a id="collect-error" title="Comunicar erro" data-toggle="modal" data-target="#comunicar-erro">
+                                    <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+                                    <span>Comunicar erro</span>
+                                </a>
+                            </li>
+
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                        <a class="display-inline-block" href="/RioClaro-SP/DecretosMunicipais/13572-2025/Arquivos/1" target="_blank">
+                                            <span class="fa fa-file-pdf-o" aria-hidden="true"></span>&nbsp;13572 D.O
+                                        </a>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+                                
+                                <li>
+                                    <a title="Exibe o texto integral da norma (as redações anteriores são exibidas com tachados)." href="/RioClaro-SP/DecretosMunicipais/13572-2025/m1">
+                                        <span class="fa fa-gear" aria-hidden="true"></span>
+                                        Texto compilado
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="Exibe o texto da norma sem as alterações." href="/RioClaro-SP/DecretosMunicipais/13572-2025/m3">
+                                        <span class="fa fa-gear" aria-hidden="true"></span>
+                                        Texto consolidado
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                            <li>
+                                    <a title="Favoritar" href="/RioClaro-SP/Account/Favorite"><span class="fa fa-star-o" aria-hidden="true"></span> Favoritar</a>
+                            </li>
+                                <li>
+                                        <a title="Inscrever-se para receber notificações" href="/RioClaro-SP/Account/Notifications"><span class="fa fa-bell-o" aria-hidden="true"></span> Seguir</a>
+                                </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a target="_blank" href="?Export=Printer" title="Versão de impressão">
+                                    <span class="fa fa-print" aria-hidden="true"></span>
+                                    Versão de impressão
+                                </a>
+                            </li>
+                            <li>
+                                <a href="?Export=Pdf" title="Exportar para PDF">
+                                    <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+                                    Exportar para PDF
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#" title="Enviar por e-mail" data-toggle="modal" data-target="#enviar-link" data-whatever="@mdo"><span class="fa fa-envelope-o" aria-hidden="true"></span> Enviar por E-mail</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/sharer/sharer.php?&u=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" title="Compartilhar no Facebook" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')"><span aria-hidden="true" class="fa fa-facebook"></span> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/intent/tweet?original_referer=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025&ref_src=twsrc%5Etfw&text=Decreto%20Municipal%20n%C2%BA%2013.572%2F2025&tw_p=tweetbutton&url=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" title="Twitar" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=580')"><span aria-hidden="true" class="fa fa-twitter"></span> Twitar no Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?text=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" title="Compartilhar pelo Whatsapp" onclick="return !window.open(this.href, 'Whatsapp', 'width=640,height=580')"><span aria-hidden="true" class="fa fa-whatsapp"></span> Whatsapp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden-xs">
+                <a class="btn btn-default" title="Ficha" data-toggle="modal" data-target="#normas-ficha" href="#">
+                    <span class="fa fa-file-text-o" aria-hidden="true"></span>
+                    <span class="visible-md-inline visible-lg-inline">Ficha</span>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <div class="btn-group" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button title="Modo de visualização" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fa fa-archive" aria-hidden="true"></span>
+                            <span class="visible-md-inline visible-lg-inline">Arquivos</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                                <li>
+                                    <a class="display-inline-block" href="/RioClaro-SP/DecretosMunicipais/13572-2025/Arquivos/1" target="_blank">
+                                        <span class="fa fa-2x fa-file-pdf-o" aria-hidden="true"></span>&nbsp;13572 D.O
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+            
+            <li class="hidden-xs">
+                <a class="btn btn-default" title="Índice" data-toggle="modal" data-target="#normas-indice" href="#">
+                    <span class="fa fa-list" aria-hidden="true"></span>
+                    <span class="visible-md-inline visible-lg-inline">Índice</span>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <div class="btn-group" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button title="Modo de visualização" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fa fa-gear" aria-hidden="true"></span>
+                            <span class="visible-md-inline visible-lg-inline">Texto compilado</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                            <li class="active"><a title="Exibe o texto integral da norma (as redações anteriores são exibidas com tachados)." href="/RioClaro-SP/DecretosMunicipais/13572-2025/m1">Texto compilado</a></li>
+                            <li><a title="Exibe o texto da norma sem as alterações." href="/RioClaro-SP/DecretosMunicipais/13572-2025/m3">Texto consolidado</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li class="visible-lg-inline visible-md-inline visible-sm-inline">
+                <div class="btn-group" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button title="Modo de visualização" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fa fa-bars" aria-hidden="true"></span>
+                            <span class="visible-md-inline visible-lg-inline">Opções</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a title="Próxima lei" href="/RioClaro-SP/DecretosMunicipais/13573">
+                                    <span>»</span>
+                                    <span>Posterior</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Lei anterior" href="/RioClaro-SP/DecretosMunicipais/13571">
+                                    <span>«</span>
+                                    <span>Anterior</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a id="collect-error" title="Comunicar erro" data-toggle="modal" data-target="#comunicar-erro">
+                                    <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+                                    <span>Comunicar erro</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                    <a class="" title="Favoritar" href="/RioClaro-SP/Account/Favorite"><span class="fa fa-star-o" aria-hidden="true"></span> Favoritar</a>
+                            </li>
+                                <li>
+                                        <a title="Inscrever-se para receber notificações" href="/RioClaro-SP/Account/Notifications"><span class="fa fa-bell-o" aria-hidden="true"></span> Seguir</a>
+                                </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list-inline pull-right">
+            <li class="hidden-xs">
+                <div class="btn-group" role="group">
+                    <button title="Exportar" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-share" aria-hidden="true"></span>
+                        <span class="visible-md-inline visible-lg-inline">Exportar</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a target="_blank" href="?Export=Printer" title="Versão de impressão">
+                                <span class="fa fa-print" aria-hidden="true"></span>
+                                Impressão
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?Export=Pdf" title="Exportar para PDF">
+                                <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+                                PDF
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hidden-xs">
+                <div class="btn-group" role="group">
+                    <button title="Modo de visualização" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-share-alt" aria-hidden="true"></span>
+                        <span class="visible-md-inline visible-lg-inline">Compartilhar</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="#" title="Enviar por e-mail" data-toggle="modal" data-target="#enviar-link" data-whatever="@mdo"><span class="fa fa-envelope-o" aria-hidden="true"></span> E-mail</a>
+                        </li>
+                        <li>
+                            <a title="Compartilhar no Facebook" href="https://www.facebook.com/sharer/sharer.php?&u=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')"><span aria-hidden="true" class="fa fa-facebook"></span> Facebook</a>
+                        </li>
+                        <li>
+                            <a title="Twitar" href="https://twitter.com/intent/tweet?original_referer=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025&ref_src=twsrc%5Etfw&text=Decreto%20Municipal%20n%C2%BA%2013.572%2F2025&tw_p=tweetbutton&url=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')"><span aria-hidden="true" class="fa fa-twitter"></span> Twitter</a>
+                        </li>
+                        <li>
+                            <a title="Compartilhar pelo Whatsapp" href="https://api.whatsapp.com/send?text=https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" onclick="return !window.open(this.href, 'Whatsapp', 'width=640,height=580')"><span aria-hidden="true" class="fa fa-whatsapp"></span> Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+        <div aria-hidden="true" class="clearfix"></div>
+
+    </div>
+
+</nav>
+
+    <div id="htmlToDoc" class="normas-redacao">
+        <div class="normas-highlight" data-highlight="">
+            <div class="normas-devices">
+                <form action="/RioClaro-SP/Compilacao/Devices" method="post">
+                    <input type="hidden" name="id" value="1511452" />
+                    <input type="hidden" name="visualizacao" value="1" />
+
+                    <div class="text-center margin-vertical-2"><span id="norma-carregando" class="fa fa-spinner fa-pulse fa-2x fa-fw"></span> Carregando...</div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I1VEvhkDxJPqSDpM0yBz0dcg1hAfNauWEJE-rDBW4dvXbYsiyigorfu3wAjbkyUzpPF7uumSBdIY05Oy4X6fUnTGDjfs4aJpRXHfXeef4rpvfiICjXqFQ1Wp7FvMUISIxWQVCDa85bZ1gWcvCt1RHc" /></form>
+            </div>
+        </div>
+    </div>
+
+
+<div class="modal fade hidden-print" id="comunicar-erro" tabindex="-1" role="dialog" aria-labelledby="normas-ficha-label">
+    <div id="error-inform" class="modal-dialog modal-lg" role="document">
+        <form class="modal-content" method="post">
+            
+            <div class="modal-header">
+                <h4>Comunicar Erro <span class="fa fa-exclamation-triangle"></span></h4>
+                <input id="userid" type="number" class="hidden" readonly value="" />
+                <input id="normaid" type="number" class="hidden" readonly value="1975216" />
+            </div>
+            
+            <div class="modal-body row">
+                <div class="col-lg-6 col-md-6 form-group">
+                    <label for="txt-feedback-msg">Digite seu nome</label>
+                    <input required minlength="2" maxlength="200" id="nome-usuario" type="text" class="clean-text form-control input-lg" placeholder="Nome"
+                           value=""
+                    />
+                </div>
+                <div class="col-lg-6 col-md-6 form-group">
+                    <label for="txt-feedback-msg">Digite seu email</label>
+                    <input required id="email-usuario" maxlength="200" type="email" class="clean-text form-control input-lg" placeholder="Email"
+                         value="" />
+                    
+                </div>
+                <div class="col-lg-12 form-group">
+                    <label for="txt-feedback-msg">Digite abaixo o erro da norma e solicitação de ajuste</label>
+                    <textarea minlength="40" maxlength="500" required id="mensagem" type="text" class="field-sizing-content max-height-40vh clean-text form-control input-lg" placeholder="Digite sua mensagem"></textarea>
+                    <span>Mínimo de caracteres: 40 / Caracteres usados: <span id="caracteres-usados">0</span></span>
+                </div>
+                <div class="col-lg-12 form-group">
+                    <input id="reply" type="checkbox" />
+                    <label for="reply"> Desejo ser informado sobre esta norma</label>
+                </div>
+                <div class="col-lg-12 form-group">
+                    <div class="g-recaptcha" data-sitekey="6LdBaVAUAAAAAJvmrKNUhsLIEKRvq7YeIVzHsR7S" data-callback="recaptchaValidated"></div>
+                    <div class="text-danger" id="LoginRecaptchaErrorMessage"></div>
+                </div>
+                <div class="form-group col-lg-12">
+                    <span>Observações: Envie somente comunicados de erro da norma que está aberta!</span><br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input id="btn-send-error" type="submit" class="btn btn-success" value="Enviar" />
+                <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I1VEvhkDxJPqSDpM0yBz0dcg1hAfNauWEJE-rDBW4dvXbYsiyigorfu3wAjbkyUzpPF7uumSBdIY05Oy4X6fUnTGDjfs4aJpRXHfXeef4rpvfiICjXqFQ1Wp7FvMUISIxWQVCDa85bZ1gWcvCt1RHc" /></form>
+    </div>
+</div>
+<script src="/js/services/button-mod-service.js"></script>
+<script src="/js/services/message-service.js"></script>
+<script src="/js/services/api-service.js"></script>
+<script src="/js/services/comunicar-erro-service.js"></script>
+<script src="/js/views/comunicar-erro-view.js"></script>
+
+
+
+<div class="history-back">
+    <a href="javascript: history.go(-1);">Voltar</a>
+</div>
+
+<div class="modal fade" id="normas-ficha" tabindex="-1" role="dialog" aria-labelledby="normas-ficha-label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="normas-ficha-label">Decreto Municipal n&#xBA; 13.572/2025</h3>
+            </div>
+            <div class="modal-body normas-details">
+                <form action="/RioClaro-SP/Compilacao/Details" method="post">
+                    <input type="hidden" name="id" value="1975216" />
+
+                    <div class="text-center margin-vertical-2"><span class="fa fa-spinner fa-pulse fa-2x fa-fw"></span> Carregando...</div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I1VEvhkDxJPqSDpM0yBz0dcg1hAfNauWEJE-rDBW4dvXbYsiyigorfu3wAjbkyUzpPF7uumSBdIY05Oy4X6fUnTGDjfs4aJpRXHfXeef4rpvfiICjXqFQ1Wp7FvMUISIxWQVCDa85bZ1gWcvCt1RHc" /></form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="normas-indice" tabindex="-1" role="dialog" aria-labelledby="normas-indice-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="normas-indice-label">&#xCD;ndice - Artigos</h3>
+                </div>
+                <div class="modal-body normas-indexes">
+                    <form action="/RioClaro-SP/Compilacao/Indexes" method="post">
+                        <input type="hidden" name="id" value="1511452" />
+                        
+                        <div class="text-center margin-vertical-2"><span class="fa fa-spinner fa-pulse fa-2x fa-fw"></span> Carregando...</div>
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I1VEvhkDxJPqSDpM0yBz0dcg1hAfNauWEJE-rDBW4dvXbYsiyigorfu3wAjbkyUzpPF7uumSBdIY05Oy4X6fUnTGDjfs4aJpRXHfXeef4rpvfiICjXqFQ1Wp7FvMUISIxWQVCDa85bZ1gWcvCt1RHc" /></form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="modal fade hidden-print" id="enviar-link" tabindex="-1" role="dialog" aria-labelledby="enviar-link-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="enviar-link-label">Enviar link por e-mail</h4>
+            </div>
+            <form id="EnviarLink" action="/RioClaro-SP/Home/EnviarLink" method="post">
+                
+                <input type="hidden" value="https://legislacaodigital.com.br/RioClaro-SP/DecretosMunicipais/13572-2025" data-val="true" data-val-required="O campo Url &#xE9; requerido." id="Url" name="Url" />
+                <span class="text-danger field-validation-valid" data-valmsg-for="Url" data-valmsg-replace="true"></span>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label" for="Email">E-mail:</label>
+                        <input class="form-control" type="email" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="O campo Email &#xE9; requerido." id="Email" name="Email" value="">
+                        <span class="text-danger field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="Mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="Mensagem" name="Mensagem">
+</textarea>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LdBaVAUAAAAAJvmrKNUhsLIEKRvq7YeIVzHsR7S" data-callback="recaptchaValidated"></div>
+                    <div class="text-danger" id="EnviarLinkRecaptchaErrorMessage"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Enviar link</button>
+                </div>
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I1VEvhkDxJPqSDpM0yBz0dcg1hAfNauWEJE-rDBW4dvXbYsiyigorfu3wAjbkyUzpPF7uumSBdIY05Oy4X6fUnTGDjfs4aJpRXHfXeef4rpvfiICjXqFQ1Wp7FvMUISIxWQVCDa85bZ1gWcvCt1RHc" /></form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/vendor/filesaver.js"></script>
+<script src="/js/html-docx.js"></script>
+
+<script>
+    
+    var exportToDock = document.getElementById('exportToDoc')
+    
+    if(exportToDock !== null){
+        exportToDock.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            //convertImagesToBase64()
+            // for demo purposes only we are using below workaround with getDoc() and manual
+            // HTML string preparation instead of simple calling the .getContent(). Becasue
+            // .getContent() returns HTML string of the original document and not a modified
+            // one whereas getDoc() returns realtime document - exactly what we need.
+            var contentDocument = document.getElementById('htmlToDoc');
+
+            var content = '<!DOCTYPE html>' + contentDocument.outerHTML;
+            var converted = htmlDocx.asBlob(content, { orientation: 'portrait' });
+
+            saveAs(converted, 'Documento.docx');
+
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(converted);
+            link.download = 'Documento.docx';
+            link.appendChild(document.createTextNode('Click here if your download has not started automatically'));
+
+            var downloadArea = document.getElementById('download-area');
+            downloadArea.innerHTML = '';
+            downloadArea.appendChild(link);
+        });
+    }
+    
+
+    function convertImagesToBase64() {
+        contentDocument = tinymce.get('content').getDoc();
+        var regularImages = contentDocument.querySelectorAll("img");
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        [].forEach.call(regularImages, function (imgElement) {
+            // preparing canvas for drawing
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            canvas.width = imgElement.width;
+            canvas.height = imgElement.height;
+
+            ctx.drawImage(imgElement, 0, 0);
+            // by default toDataURL() produces png image, but you can also export to jpeg
+            // checkout function's documentation for more details
+            var dataURL = canvas.toDataURL();
+            imgElement.setAttribute('src', dataURL);
+        })
+        canvas.remove();
+    }
+
+    const checkLoading = () => {
+        setTimeout(() => {
+            const element = $('#norma-carregando')
+            if(element.length > 0)
+                checkLoading()
+            else 
+                window.status = 'ready'
+        }, 250)
+    }
+    checkLoading()
+    
+</script>
+            </div>
+
+            
+    
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js" crossorigin="anonymous" integrity="sha384-Fnqn3nxp3506LP/7Y3j/25BlWeA3PXTyT1l78LjECcPaKCV12TsZP7yyMxOe/G/k">
+    </script>
+<script>(window.jQuery && window.jQuery.validator||document.write("\u003Cscript src=\u0022/lib/jquery-validation/dist/jquery.validate.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-Fnqn3nxp3506LP/7Y3j/25BlWeA3PXTyT1l78LjECcPaKCV12TsZP7yyMxOe/G/k\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js" crossorigin="anonymous" integrity="sha384-JrXK+k53HACyavUKOsL+NkmSesD2P+73eDMrbTtTk0h4RmOF8hF8apPlkp26JlyH">
+    </script>
+<script>(window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive||document.write("\u003Cscript src=\u0022/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-JrXK\u002Bk53HACyavUKOsL\u002BNkmSesD2P\u002B73eDMrbTtTk0h4RmOF8hF8apPlkp26JlyH\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="/lib/jquery.validate.unobtrusive.bootstrap/jquery.validate.unobtrusive.bootstrap.min.js"></script>
+
+
+
+            
+    <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR" async defer></script><script>var recaptchaValidated=function(e){var r=$('#EnviarLinkRecaptchaErrorMessage');r.length&&r.hide()};$.validator.setDefaults({submitHandler:function(){var e=this,r=''!==grecaptcha.getResponse(),a='Valide que você não é um robô.',t=$('#EnviarLinkRecaptchaErrorMessage', e.currentForm);if(t.length===0)return !0;return a&&(r?t.length&&t.hide():(e.errorList.push({message:a}),$(e.currentForm).triggerHandler('invalid-form',[e]),t.length&&(t.html(a),t.show()))),r}});</script>
+
+
+            <noscript>
+                <p>Your browser does not support JavaScript!</p>
+            </noscript>
+            <div class="visible-md visible-sm visible-lg">
+                <a href="#" id="back-to-top" title="Volta para o topo da página" class="padding-1-2"><span class="fa fa-chevron-up" aria-hidden="true"></span> <span>Topo</span></a>
+            </div>
+        </div>
+
+        
+        
+            <script src="/js/site.min.js?v=UWePZYaS9GoRLYudT2KYplRi8V34JwLJzUKonjnX_g0" defer></script>
+        
+
+        <script>
+            document.write("<div vw class=\"enabled\"><div vw-access-button class=\"active\"></div><div vw-plugin-wrapper><div class=\"vw-plugin-top-wrapper\"></div></div></div><script async src=\"https://vlibras.gov.br/app/vlibras-plugin.js\" onload=\"new window.VLibras.Widget('https://vlibras.gov.br/app')\"><\/script>");
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79859774-33"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-79859774-33');
+        </script>
+
+        <footer class="navbar-inverse hidden-print">
+            <div class="container">
+                <ul class="list-inline pull-left" id="rodape">
+                    <li><a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" /></a></li>
+                    <li>&copy; 2025 - Sino Informática - 6.2.0.5</li>
+                        <li>Rua 3, 945, Centro,                             Rio Claro - SP
+                        </li>
+
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    
+</body>
+</html>

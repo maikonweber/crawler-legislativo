@@ -1,0 +1,20 @@
+{
+  "name": "camera-scraper",
+  "version": "1.0.0",
+  "description": "Scraper para extrair informações de camera",
+  "main": "scrapper.js",
+  "type": "module",
+  "scripts": {
+    "start:pro": "node camara_scraper_proposituras.js",
+    "start:leg": "node camara_scraper_legislativo.js"
+  },
+  "author": "Maikon Weber de Carvalho",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^21.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
