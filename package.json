@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start:pro": "node camara_scraper_proposituras.js",
-    "start:leg": "node camara_scraper_legislativo.js"
+    "start:leg": "node camara_scraper_legislativo.js",
+    "start": "node camara_legislativo_complemento.js"
   },
   "author": "Maikon Weber de Carvalho",
   "license": "MIT",
