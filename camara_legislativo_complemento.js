@@ -208,8 +208,15 @@ async function main() {
       
 
     } catch (error) {
+        fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
+        console.log(`\nInformações salvas em: ${infoPath}`);
+      
         console.error('Ocorreu um erro:', error);
+
     } finally {
+        fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
+        console.log(`\nInformações salvas em: ${infoPath}`);
+      
         await browser.close();
     }
 }
