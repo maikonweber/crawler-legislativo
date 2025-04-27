@@ -4,6 +4,7 @@ import path from 'node:path';
 import fetch from 'node-fetch';
 import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
+import { error } from 'node:console';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -30,19 +31,24 @@ function sanitizeFileName(name) {
 
 // Extrair os links para os documentos
 async function extrairDocumentosNormasLista(page) {
-    console.log("Extraindo documentos...")
+    console.log("Extraindo documentos...");
     return await page.evaluate(() => {
         const resultados = [];
         const itens = document.querySelectorAll('.normas-lista');
-        
+
         // biome-ignore lint/complexity/noForEach: <explanation>
-                itens.forEach(item => {
+        itens.forEach(item => {
             const links = item.querySelectorAll('a');
-            if (links.length >= 2) {
+            
+            // Verifica se há links suficientes e se eles possuem href
+            const linkDetalhado = links[0]?.href; // Optional chaining
+            const linkPDF = links[2]?.href;
+
+            if (linkDetalhado && linkPDF) { // Só adiciona se ambos existirem
                 resultados.push({
                     titulo: links[0].textContent.trim(),
-                    linkDetalhado: links[0].href,
-                    linkPDF: links[2].href 
+                    linkDetalhado: linkDetalhado,
+                    linkPDF: linkPDF
                 });
             }
         });
@@ -106,6 +112,8 @@ async function processarPagina(page, paginaAtual) {
         documentosInfo.push({
             titulo: doc.titulo,
             pasta: docDir,
+            pdfLink: exportarPdfLink,
+            manucristoLink: doc.linkDetalhado,
             pagina_pdf: pdfPath,
             pdf_direto: caminhoPDF,
             pagina: paginaAtual
@@ -119,7 +127,7 @@ async function processarPagina(page, paginaAtual) {
 
 async function main() {
     const apenasUmaPagina = process.argv.includes('--uma-pagina');
-
+    let todosDocumentosInfo = [];
     const documentosInfoPath = path.join(outputDir, 'documentos_info.json');
 
     let paginaAtual = 1;
@@ -130,6 +138,7 @@ async function main() {
             const data = JSON.parse(fs.readFileSync(documentosInfoPath));
             if (data.length > 0) {
                 // Pegando a última entrada
+                todosDocumentosInfo = data
                 const ultimaPagina = data[data.length - 1].pagina;
                 paginaAtual = ultimaPagina; // Inicia da página seguinte
                 console.log(`Retomando a partir da página ${paginaAtual}...`);
@@ -146,10 +155,13 @@ async function main() {
         args: ['--start-maximized']
     });
 
+
+  
+    
     try {
         const page = await browser.newPage();
         let temProximaPagina = true;
-        const todosDocumentosInfo = [];
+       
 
         while (temProximaPagina) {
             const url = `https://legislacaodigital.com.br/RioClaro-SP?Pagina=${paginaAtual}&Pesquisa=Avancada&TipoId=0&Numero=&Ano=&Data=&NumeroFinal=&AnoFinal=&DataFinal=&SituacaoId=0&ClassificacaoId=0&EmentaAssunto=a&PaginaCount=20&NoTexto=false`;
@@ -166,6 +178,7 @@ async function main() {
                 paginaAtual++;
                 if (apenasUmaPagina) break;
                 console.log(`\nPreparando para processar página ${paginaAtual}...`);
+                
         }
 
         const csvPath = path.join(outputDir, 'documentos_info.csv');
@@ -211,7 +224,7 @@ async function main() {
 
         fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
         console.log(`\nInformações salvas em: ${infoPath}`);
-      
+       
 
     } catch (error) {
      
@@ -219,9 +232,15 @@ async function main() {
         console.error('Ocorreu um erro:', error);
 
     } finally {
-        fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
-        console.log(`\nInformações salvas em: ${infoPath}`);
-        
+            
+        try {
+            const infoPath = path.join(outputDir, 'documentos_info.json');
+            fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
+            console.log(`\nInformações salvas em: ${infoPath}`);
+        } catch (e) {
+            console.error('Erro ao salvar JSON final:', e.message);
+        }
+
         await browser.close();
     }
 }

@@ -126,7 +126,8 @@ async function processarPagina(page, paginaAtual) {
         
             docLinks.push({
                 tipo: link.extensao,
-                caminho: caminhoArquivo
+                caminho: caminhoArquivo,
+                links: link.href
             });
         }
 
@@ -136,6 +137,8 @@ async function processarPagina(page, paginaAtual) {
             pasta: docDir,
             pdf: pdfPath,
             documentos: docLinks,
+            linkHref: linksDocumentos,
+            linkDoc: doc.link,
             pagina: paginaAtual
         });
         
@@ -151,10 +154,11 @@ async function processarPagina(page, paginaAtual) {
 
 async function main() {
     const apenasUmaPagina = process.argv.includes('--uma-pagina');
-
+    let todosDocumentosInfo = [];
     const documentosInfoPath = path.join(outputDir, 'documentos_info.json');
 
     let paginaAtual = 1;
+  
 
     // Verifica se o arquivo documentos_info.json existe e se contém dados
     if (fs.existsSync(documentosInfoPath)) {
@@ -162,8 +166,11 @@ async function main() {
             const data = JSON.parse(fs.readFileSync(documentosInfoPath));
             if (data.length > 0) {
                 // Pegando a última entrada
+                todosDocumentosInfo = data
                 const ultimaPagina = data[data.length - 1].pagina;
-                paginaAtual = ultimaPagina; // Inicia da página seguinte
+                
+
+                paginaAtual = ultimaPagina // Inicia da página seguinte
                 console.log(`Retomando a partir da página ${paginaAtual}...`);
             }
         } catch (e) {
@@ -171,17 +178,22 @@ async function main() {
         }
     }
 
+    const browser = await puppeteer.launch({
+        headless: true,
+        defaultViewport: null,
+        args: ['--start-maximized']
+    });
+
     try {
         const page = await browser.newPage();
-      
-        // biome-ignore lint/style/useConst: <explanation>
-        let temProximaPagina = true;
-        const todosDocumentosInfo = [];
+       
+        const temProximaPagina = true;
         
         while (temProximaPagina) {
             // Acessar a página atual
             const url = `https://rioclaro.siscam.com.br/Documentos/Pesquisa?Pesquisa=Avancada&id=80&pagina=${paginaAtual}&Modulo=8&Documento=0&Numeracao=Documento&NumeroInicial=&AnoInicial=&DataInicial=&NumeroFinal=&AnoFinal=&DataFinal=&Situacao=0&TipoAutor=Todos&AutoriaId=0&Iniciativa=Nenhum&NoTexto=false&Assunto=a&Observacoes=`;
             
+
             console.log(`\nAcessando página ${paginaAtual}...`);
             await page.goto(url);
             await page.waitForSelector('.data-list-item');
@@ -189,24 +201,22 @@ async function main() {
             // Processar a página atual
             const documentosInfo = await processarPagina(page, paginaAtual);
             todosDocumentosInfo.push(...documentosInfo);
-                paginaAtual++;
-                if (apenasUmaPagina) break;
-                console.log(`\nPreparando para processar página ${paginaAtual}...`);
-        
+            
+            paginaAtual++;
+            if (apenasUmaPagina) break;
+            console.log(`\nPreparando para processar página ${paginaAtual}...`);
         }
-        const csvPath = path.join(outputDir, 'documentos_info.csv');
-        
-        const stream = fs.createWriteStream(csvPath, { flags: 'w', encoding: 'utf-8' });
 
-        const csvHeaders = ['Título', 'Pasta', 'PDF', 'Tipo do Arquivo', 'Caminho do Arquivo', 'Página'];
-        const linhasCsv = [csvHeaders.join(',')];
-        // Salvar informações em um arquivo JSON
+        const csvPath = path.join(outputDir, 'documentos_info.csv');
+        const stream = fs.createWriteStream(csvPath, { flags: 'w', encoding: 'utf-8' });
         
+        // Salvar informações em um arquivo JSON
         const infoPath = path.join(outputDir, 'documentos_info.json');
         stream.write('Título,Pasta,PDF,Tipo do Arquivo,Caminho do Arquivo,Página\n');
 
         for (const doc of todosDocumentosInfo) {
-            if (doc.documentos.length > 0) {
+            // Verificar se 'documentos' é um array e não é vazio
+            if (Array.isArray(doc.documentos) && doc.documentos.length > 0) {
                 for (const arq of doc.documentos) {
                     // biome-ignore lint/style/useTemplate: <explanation>
                     const linha = [
@@ -220,7 +230,7 @@ async function main() {
                     stream.write(linha);
                 }
             } else {
-                // Caso o documento não tenha arquivos anexos
+                // Caso o documento não tenha arquivos anexos, adicionar uma linha vazia
                 // biome-ignore lint/style/useTemplate: <explanation>
                                 const linha = [
                     `"${doc.titulo.replace(/"/g, '""')}"`,
@@ -233,7 +243,6 @@ async function main() {
                 stream.write(linha);
             }
         }
-        
         // Finalizar o stream
         stream.end(() => {
             console.log(`CSV salvo em: ${csvPath}`);
@@ -241,21 +250,23 @@ async function main() {
 
         fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
         console.log(`\nInformações salvas em: ${infoPath}`);
-
-        // Manter a página aberta por mais 1 minuto
-        console.log(`\nProcessando página ${paginaAtual} de ${paginaAtual + 1}...`);
-        // Não há código para inserir neste ponto
-        console.log('\nMantendo página aberta por mais 1 minuto...');
-
+       
 
     } catch (error) {
         console.error('Ocorreu um erro:', error);
     } finally {
-                fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
-                console.log(`\nInformações salvas em: ${infoPath}`);
-              
+        // Salvar informações em um arquivo JSON
+        try {
+            const infoPath = path.join(outputDir, 'documentos_info.json');
+            fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
+            console.log(`\nInformações salvas em: ${infoPath}`);
+        } catch (e) {
+            console.error('Erro ao salvar JSON final:', e.message);
+        }
+
         await browser.close();
+        // Fechar o navegador
     }
 }
 
-main(); 
+main();
