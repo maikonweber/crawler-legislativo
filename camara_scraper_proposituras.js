@@ -152,15 +152,28 @@ async function processarPagina(page, paginaAtual) {
 async function main() {
     const apenasUmaPagina = process.argv.includes('--uma-pagina');
 
-    const browser = await puppeteer.launch({
-        headless: true,
-        defaultViewport: null,
-        args: ['--start-maximized']
-    });
+    const documentosInfoPath = path.join(outputDir, 'documentos_info.json');
+
+    let paginaAtual = 1;
+
+    // Verifica se o arquivo documentos_info.json existe e se contém dados
+    if (fs.existsSync(documentosInfoPath)) {
+        try {
+            const data = JSON.parse(fs.readFileSync(documentosInfoPath));
+            if (data.length > 0) {
+                // Pegando a última entrada
+                const ultimaPagina = data[data.length - 1].pagina;
+                paginaAtual = ultimaPagina; // Inicia da página seguinte
+                console.log(`Retomando a partir da página ${paginaAtual}...`);
+            }
+        } catch (e) {
+            console.error('Erro ao ler documentos_info.json:', e.message);
+        }
+    }
 
     try {
         const page = await browser.newPage();
-        let paginaAtual = 1;
+      
         // biome-ignore lint/style/useConst: <explanation>
         let temProximaPagina = true;
         const todosDocumentosInfo = [];

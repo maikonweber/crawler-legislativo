@@ -35,7 +35,8 @@ async function extrairDocumentosNormasLista(page) {
         const resultados = [];
         const itens = document.querySelectorAll('.normas-lista');
         
-        itens.forEach(item => {
+        // biome-ignore lint/complexity/noForEach: <explanation>
+                itens.forEach(item => {
             const links = item.querySelectorAll('a');
             if (links.length >= 2) {
                 resultados.push({
@@ -119,20 +120,25 @@ async function processarPagina(page, paginaAtual) {
 async function main() {
     const apenasUmaPagina = process.argv.includes('--uma-pagina');
 
-    const savePointPath = path.join(outputDir, 'savepoint.json');
+    const documentosInfoPath = path.join(outputDir, 'documentos_info.json');
 
     let paginaAtual = 1;
-    if (fs.existsSync(savePointPath)) {
+
+    // Verifica se o arquivo documentos_info.json existe e se contém dados
+    if (fs.existsSync(documentosInfoPath)) {
         try {
-            const data = JSON.parse(fs.readFileSync(savePointPath));
-            if (data.ultimaPaginaProcessada) {
-                paginaAtual = data.ultimaPaginaProcessada + 1;
+            const data = JSON.parse(fs.readFileSync(documentosInfoPath));
+            if (data.length > 0) {
+                // Pegando a última entrada
+                const ultimaPagina = data[data.length - 1].pagina;
+                paginaAtual = ultimaPagina; // Inicia da página seguinte
                 console.log(`Retomando a partir da página ${paginaAtual}...`);
             }
         } catch (e) {
-            console.error('Erro ao ler savepoint:', e.message);
+            console.error('Erro ao ler documentos_info.json:', e.message);
         }
     }
+
 
     const browser = await puppeteer.launch({
         headless: true,
@@ -215,7 +221,7 @@ async function main() {
     } finally {
         fs.writeFileSync(infoPath, JSON.stringify(todosDocumentosInfo, null, 2));
         console.log(`\nInformações salvas em: ${infoPath}`);
-      
+        
         await browser.close();
     }
 }
